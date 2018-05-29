@@ -8,6 +8,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ContactoPage } from '../pages/contacto/contacto';
 import { EscuelasPage } from '../pages/escuelas/escuelas';
+
 @NgModule({
   declarations: [
     MyApp,

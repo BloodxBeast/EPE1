@@ -1,1 +1,18 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="NAV">
+  <ion-header>
+    <ion-toolbar color="dark">
+        <ion-title>Menú</ion-title>
+    </ion-toolbar>
+    </ion-header>
+    <ion-content style="background-color: rgb(34, 34, 34)">
+        <ion-list>
+            <button color="dark" ion-item *ngFor='let page of pages' (click)="goToPage(page.component)" menuClose> 
+              <ion-icon item-left name="{{page.icon}}"></ion-icon>
+              {{ page.titulo}}
+            </button>
+            <button color="dark" ion-item menuClose><ion-icon item-left name="close-circle"></ion-icon>Cerrar</button>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+
+<ion-nav #NAV [root]="rootPage"></ion-nav>

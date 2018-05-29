@@ -23,8 +23,8 @@ export class MyApp {
     this.pages= [
       {titulo : 'Inicio', component: HomePage, icon: 'home'},
       {titulo : 'Escuelas', component: EscuelasPage, icon: 'school'},
-      {titulo :'Informacion',component: InformacionPage,icon:'alert'},
-      {titulo : 'Sintomas',component:SintomasPage,icon:''},
+      {titulo :'Informacion',component: InformacionPage,icon:'information-circle'},
+      {titulo : 'Sintomas',component:SintomasPage,icon:'heart'},
       {titulo : 'Contacto', component: ContactoPage, icon: 'mail'}
 
     ];

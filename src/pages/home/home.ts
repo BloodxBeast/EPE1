@@ -7,8 +7,12 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
+  toggleValue: boolean = false;
   constructor(public navCtrl: NavController) {
 
   }
 
+  change(){
+    console.log(this.toggleValue);
+  }
 }

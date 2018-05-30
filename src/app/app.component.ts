@@ -11,6 +11,7 @@ import { EscuelasPage } from '../pages/escuelas/escuelas';
 import { QuienesSomosPage } from '../pages/quienes-somos/quienes-somos';
 import { AdultosPage } from '../pages/adultos/adultos';
 import { SugerenciasPage } from '../pages/sugerencias/sugerencias';
+import { RecreacionPage } from '../pages/recreacion/recreacion';
 
 @Component({
   templateUrl: 'app.html'
@@ -31,7 +32,8 @@ export class MyApp {
       { titulo: 'Acerca de', component: QuienesSomosPage, icon: 'star-half' },
       { titulo: 'En adultos', component: AdultosPage, icon: 'contact' },
       { titulo: 'Sugerencia', component: SugerenciasPage, icon: 'create' },
-      { titulo: 'Contacto', component: ContactoPage, icon: 'mail' }
+      { titulo: 'Contacto', component: ContactoPage, icon: 'mail' },
+      { titulo: 'Recreacion', component: RecreacionPage, icon: 'color-palette'}
     ];
 
     platform.ready().then(() => {

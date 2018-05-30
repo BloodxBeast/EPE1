@@ -8,10 +8,10 @@
 
 <ion-content padding>
     <ion-item>
-        <ion-label>Escuelas: </ion-label>
-        <ion-toggle  [(ngModel)]="toggleValue" (ionChange)="change()"></ion-toggle>
+        <ion-label>Escuela 1: </ion-label>
+        <ion-toggle  [(ngModel)]="toggleValue1" (ionChange)="change()"></ion-toggle>
      </ion-item>
-<ion-card *ngIf="toggleValue">
+<ion-card *ngIf="toggleValue1">
     
     <img src="assets/imgs/escuela1.jpg"/>
     <ion-card-content>
@@ -20,8 +20,11 @@
         <p>Dirección: Tupahue 7618, La Florida, Región Metropolitana</p>
     </ion-card-content>
   </ion-card>
-
-    <ion-card>
+  <ion-item>
+    <ion-label>Escuela 2: </ion-label>
+    <ion-toggle  [(ngModel)]="toggleValue2" (ionChange)="change()"></ion-toggle>
+ </ion-item>
+    <ion-card *ngIf="toggleValue2">
    
     <img src="assets/imgs/escuela2.jpg"/>
     <ion-card-content>
@@ -31,8 +34,12 @@
         <p> Dirección: Tupahue 7618, La Florida, Región Metropolitana</p>
     </ion-card-content>
   </ion-card>
-  <ion-card>
-    
+  <ion-item>
+    <ion-label>Escuela 3: </ion-label>
+    <ion-toggle  [(ngModel)]="toggleValue3" (ionChange)="change()"></ion-toggle>
+ </ion-item>
+    <ion-card *ngIf="toggleValue3">
+   
     <img src="assets/imgs/escuela3.jpg"/>
     <ion-card-content>
     <ion-card-title>
@@ -41,8 +48,12 @@
           <p> Dirección: Tupahue 7618, La Florida, Región Metropolitana </p> 
     </ion-card-content>
   </ion-card>
-  <ion-card>
- 
+  <ion-item>
+    <ion-label>Escuela 4: </ion-label>
+    <ion-toggle  [(ngModel)]="toggleValue4" (ionChange)="change()"></ion-toggle>
+ </ion-item>
+    <ion-card *ngIf="toggleValue4">
+
     <img src="assets/imgs/escuela4.jpg"/>
     <ion-card-content>
       <ion-card-title>

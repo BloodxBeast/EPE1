@@ -30,7 +30,7 @@ export class MyApp {
       { titulo: 'Sintomas', component: SintomasPage, icon: 'heart' },
       { titulo: 'Acerca de', component: QuienesSomosPage, icon: 'star-half' },
       { titulo: 'En adultos', component: AdultosPage, icon: 'contact' },
-      { titulo: 'Sugerencia', component: SugerenciasPage, icon: 'clipboard' },
+      { titulo: 'Sugerencia', component: SugerenciasPage, icon: 'create' },
       { titulo: 'Contacto', component: ContactoPage, icon: 'mail' }
     ];
 

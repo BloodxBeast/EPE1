@@ -14,8 +14,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'escuelas.html',
 })
 export class EscuelasPage {
-
+  
+  toggleValue: boolean = false;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+
+  change(){
+    console.log(this.toggleValue);
   }
 
   ionViewDidLoad() {

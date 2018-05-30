@@ -1,50 +1,53 @@
 <ion-header>
-    <ion-navbar color="light">
-      <button ion-button menuToggle>
-        <ion-icon name="menu"></ion-icon>
-      </button>
-      <ion-title>Sugerencia</ion-title>
-    </ion-navbar>
-  </ion-header>
-  
-  <ion-content padding>
-    <ion-card>
-      <div>
-        <img src="assets/imgs/logoAsper.png">
-      </div>
-    </ion-card>
-    <ion-card>
-      <ion-card-content>
-        <ion-card-title>
-          Sugerencias
-        </ion-card-title>
-        
-            <ion-list>
-              <ion-item>
-                <ion-label>Titulo</ion-label>
-              <ion-input type="text" ></ion-input>
-              </ion-item>
-              <ion-item>
-                  <ion-label>Nombre</ion-label>
-                <ion-input type="text">
+  <ion-navbar color="light">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Sugerencia</ion-title>
+  </ion-navbar>
+</ion-header>
 
-                </ion-input>
-              </ion-item>
-           <ion-item>
-              <ion-label>Sugerencia</ion-label>
-              <ion-textarea ></ion-textarea>
-            </ion-item>
-            
-            </ion-list>
-          <button ion-button full>Enviar</button>
-      </ion-card-content>
-    </ion-card>
-  
-  </ion-content>
-  
-  
-  <ion-footer>
-    <ion-toolbar color="dark">
-      <ion-title>Sugerencia</ion-title>
-    </ion-toolbar>
-  </ion-footer>
+<ion-content padding>
+  <ion-card>
+    <div>
+      <img src="assets/imgs/logoAsper.png">
+    </div>
+  </ion-card>
+  <ion-card>
+    <ion-card-content>
+      <ion-card-title>
+        Sugerencias
+      </ion-card-title>
+
+      <ion-list>
+        <ion-item>
+          <ion-label floating >Nombre</ion-label>
+          <ion-input class="texts" type="text">
+
+          </ion-input>
+        </ion-item>
+        <ion-item >
+          <ion-label floating>Titulo</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Sugerencia</ion-label>
+          <ion-textarea ></ion-textarea>
+        </ion-item>
+        <ion-item>
+          <button ion-button color="dark" outline>Enviar</button>
+        </ion-item>
+      </ion-list>
+
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar color="dark">
+    <ion-title>Sugerencia</ion-title>
+  </ion-toolbar>
+</ion-footer>

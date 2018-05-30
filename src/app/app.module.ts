@@ -10,10 +10,12 @@ import { ContactoPage } from '../pages/contacto/contacto';
 import {InformacionPage }from'../pages/informacion/informacion';
 import { SintomasPage } from '../pages/sintomas/sintomas';
 import { EscuelasPage } from '../pages/escuelas/escuelas';
+import {QuienesSomosPage } from '../pages/quienes-somos/quienes-somos';
+
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,ContactoPage,InformacionPage,SintomasPage,EscuelasPage     
+    HomePage,ContactoPage,InformacionPage,SintomasPage,EscuelasPage,QuienesSomosPage  
   ],
   imports: [
     BrowserModule,
@@ -22,7 +24,7 @@ import { EscuelasPage } from '../pages/escuelas/escuelas';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,ContactoPage,InformacionPage,SintomasPage,EscuelasPage         
+    HomePage,ContactoPage,InformacionPage,SintomasPage,EscuelasPage, QuienesSomosPage    
   ],
   providers: [
     StatusBar,

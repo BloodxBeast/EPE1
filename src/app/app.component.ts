@@ -8,6 +8,7 @@ import { ContactoPage } from '../pages/contacto/contacto';
 import { InformacionPage } from '../pages/informacion/informacion';
 import { SintomasPage } from '../pages/sintomas/sintomas';
 import { EscuelasPage } from '../pages/escuelas/escuelas';
+import  { QuienesSomosPage } from '../pages/quienes-somos/quienes-somos';
 
 @Component({
   templateUrl: 'app.html'
@@ -25,7 +26,8 @@ export class MyApp {
       {titulo : 'Escuelas', component: EscuelasPage, icon: 'school'},
       {titulo :'Informacion',component: InformacionPage,icon:'information-circle'},
       {titulo : 'Sintomas',component:SintomasPage,icon:'heart'},
-      {titulo : 'Contacto', component: ContactoPage, icon: 'mail'}
+      {titulo : 'Contacto', component: ContactoPage, icon: 'mail'},
+      {titulo : 'quienes-somos', component: QuienesSomosPage, icon: 'body'}
 
     ];
 

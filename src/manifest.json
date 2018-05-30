@@ -1,6 +1,6 @@
 {
-  "name": "Ionic",
-  "short_name": "Ionic",
+  "name": "AspergerInfoApp",
+  "short_name": "AspergerInfoApp",
   "start_url": "index.html",
   "display": "standalone",
   "icons": [{

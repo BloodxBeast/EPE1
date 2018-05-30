@@ -7,17 +7,25 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ContactoPage } from '../pages/contacto/contacto';
-import {InformacionPage }from'../pages/informacion/informacion';
+import { InformacionPage } from '../pages/informacion/informacion';
 import { SintomasPage } from '../pages/sintomas/sintomas';
 import { EscuelasPage } from '../pages/escuelas/escuelas';
-import {QuienesSomosPage } from '../pages/quienes-somos/quienes-somos';
-import {AdultosPage} from'../pages/adultos/adultos';
+import { QuienesSomosPage } from '../pages/quienes-somos/quienes-somos';
+import { AdultosPage } from '../pages/adultos/adultos';
 import { SugerenciasPage } from '../pages/sugerencias/sugerencias';
 import { RecreacionPage } from '../pages/recreacion/recreacion';
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,ContactoPage,InformacionPage,SintomasPage,EscuelasPage,QuienesSomosPage,AdultosPage,SugerenciasPage, RecreacionPage
+    HomePage,
+    ContactoPage,
+    InformacionPage,
+    SintomasPage,
+    EscuelasPage,
+    QuienesSomosPage,
+    AdultosPage,
+    SugerenciasPage,
+    RecreacionPage
   ],
   imports: [
     BrowserModule,
@@ -26,12 +34,20 @@ import { RecreacionPage } from '../pages/recreacion/recreacion';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,ContactoPage,InformacionPage,SintomasPage,EscuelasPage, QuienesSomosPage,AdultosPage,SugerenciasPage, RecreacionPage
+    HomePage,
+    ContactoPage,
+    InformacionPage,
+    SintomasPage,
+    EscuelasPage,
+    QuienesSomosPage,
+    AdultosPage,
+    SugerenciasPage,
+    RecreacionPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
-export class AppModule {}
+export class AppModule { }

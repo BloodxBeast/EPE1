@@ -27,7 +27,7 @@ export class MyApp {
       {titulo :'Informacion',component: InformacionPage,icon:'information-circle'},
       {titulo : 'Sintomas',component:SintomasPage,icon:'heart'},
       {titulo : 'Contacto', component: ContactoPage, icon: 'mail'},
-      {titulo : 'quienes-somos', component: QuienesSomosPage, icon: 'body'}
+      {titulo : 'Acerca de', component: QuienesSomosPage, icon: 'star-half'}
 
     ];
 

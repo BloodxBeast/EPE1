@@ -5,7 +5,7 @@
     </ion-toolbar>
     </ion-header>
     <ion-content style="background-color: rgb(34, 34, 34)">
-        <ion-list>
+        <ion-list inset>
             <button color="dark" ion-item *ngFor='let page of pages' (click)="goToPage(page.component)" menuClose> 
               <ion-icon item-left name="{{page.icon}}"></ion-icon>
               {{ page.titulo}}

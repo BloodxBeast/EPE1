@@ -6,12 +6,12 @@
     <ion-title>Recreación</ion-title>
   </ion-navbar>
 
-  <ion-toolbar no-border-top>
-    <ion-segment [(ngModel)]="sitios">
+  <ion-toolbar no-border-top >
+    <ion-segment [(ngModel)]="sitios" color="dark">
       <ion-segment-button value="norte">
         Zona Norte
       </ion-segment-button>
-      <ion-segment-button value="rm">
+      <ion-segment-button value="rm" >
         Región Metropolitana
       </ion-segment-button>
       <ion-segment-button value="sur">
@@ -20,10 +20,9 @@
     </ion-segment>
   </ion-toolbar>
 </ion-header>
-
-<ion-content>
-  <div [ngSwitch]="sitios">
-    <ion-list *ngSwitchCase="'norte'">
+<ion-content style="background-color:#FAE4BD">
+  <div [ngSwitch]="sitios" >
+    <ion-list *ngSwitchCase="'norte'" >
       <ion-item>
         <ion-thumbnail item-start>
           <img src="assets/imgs/norte1.jpg">

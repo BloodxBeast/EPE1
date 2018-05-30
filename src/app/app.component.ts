@@ -29,11 +29,12 @@ export class MyApp {
       { titulo: 'Escuelas', component: EscuelasPage, icon: 'school' },
       { titulo: 'Informacion', component: InformacionPage, icon: 'information-circle' },
       { titulo: 'Sintomas', component: SintomasPage, icon: 'heart' },
-      { titulo: 'Acerca de', component: QuienesSomosPage, icon: 'star-half' },
+      { titulo: 'Recreacion', component: RecreacionPage, icon: 'color-palette'},     
       { titulo: 'En adultos', component: AdultosPage, icon: 'contact' },
       { titulo: 'Sugerencia', component: SugerenciasPage, icon: 'create' },
-      { titulo: 'Contacto', component: ContactoPage, icon: 'mail' },
-      { titulo: 'Recreacion', component: RecreacionPage, icon: 'color-palette'}
+      { titulo: 'Acerca de', component: QuienesSomosPage, icon: 'star-half' },
+      { titulo: 'Contacto', component: ContactoPage, icon: 'mail' }
+      
     ];
 
     platform.ready().then(() => {

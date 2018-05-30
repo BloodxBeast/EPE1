@@ -8,7 +8,7 @@ import { ContactoPage } from '../pages/contacto/contacto';
 import { InformacionPage } from '../pages/informacion/informacion';
 import { SintomasPage } from '../pages/sintomas/sintomas';
 import { EscuelasPage } from '../pages/escuelas/escuelas';
-import  { QuienesSomosPage } from '../pages/quienes-somos/quienes-somos';
+import { QuienesSomosPage } from '../pages/quienes-somos/quienes-somos';
 import { AdultosPage } from '../pages/adultos/adultos';
 import { SugerenciasPage } from '../pages/sugerencias/sugerencias';
 
@@ -18,21 +18,20 @@ import { SugerenciasPage } from '../pages/sugerencias/sugerencias';
 export class MyApp {
   @ViewChild('NAV') nav: Nav;
   public rootPage: any;
-  public pages: Array<{ titulo:string, component: any,icon:string }>;
+  public pages: Array<{ titulo: string, component: any, icon: string }>;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
-   
-    this.rootPage = HomePage;
-    this.pages= [
-      {titulo : 'Inicio', component: HomePage, icon: 'home'},
-      {titulo : 'Escuelas', component: EscuelasPage, icon: 'school'},
-      {titulo :'Informacion',component: InformacionPage,icon:'information-circle'},
-      {titulo : 'Sintomas',component:SintomasPage,icon:'heart'},
-      {titulo : 'Contacto', component: ContactoPage, icon: 'mail'},
-      {titulo : 'Acerca de', component: QuienesSomosPage, icon: 'star-half'},
-      {titulo : 'En adultos', component:AdultosPage,icon:'contact'},
-      {titulo : 'Sugerencia', component: SugerenciasPage,icon: 'clipboard'}
 
+    this.rootPage = HomePage;
+    this.pages = [
+      { titulo: 'Inicio', component: HomePage, icon: 'home' },
+      { titulo: 'Escuelas', component: EscuelasPage, icon: 'school' },
+      { titulo: 'Informacion', component: InformacionPage, icon: 'information-circle' },
+      { titulo: 'Sintomas', component: SintomasPage, icon: 'heart' },
+      { titulo: 'Acerca de', component: QuienesSomosPage, icon: 'star-half' },
+      { titulo: 'En adultos', component: AdultosPage, icon: 'contact' },
+      { titulo: 'Sugerencia', component: SugerenciasPage, icon: 'clipboard' },
+      { titulo: 'Contacto', component: ContactoPage, icon: 'mail' }
     ];
 
     platform.ready().then(() => {
@@ -43,7 +42,7 @@ export class MyApp {
     });
   }
 
-  goToPage(page){
+  goToPage(page) {
     this.nav.setRoot(page);
   }
 }

@@ -9,6 +9,7 @@ import { InformacionPage } from '../pages/informacion/informacion';
 import { SintomasPage } from '../pages/sintomas/sintomas';
 import { EscuelasPage } from '../pages/escuelas/escuelas';
 import  { QuienesSomosPage } from '../pages/quienes-somos/quienes-somos';
+import { AdultosPage } from '../pages/adultos/adultos';
 
 @Component({
   templateUrl: 'app.html'
@@ -27,7 +28,8 @@ export class MyApp {
       {titulo :'Informacion',component: InformacionPage,icon:'information-circle'},
       {titulo : 'Sintomas',component:SintomasPage,icon:'heart'},
       {titulo : 'Contacto', component: ContactoPage, icon: 'mail'},
-      {titulo : 'Acerca de', component: QuienesSomosPage, icon: 'star-half'}
+      {titulo : 'Acerca de', component: QuienesSomosPage, icon: 'star-half'},
+      {titulo : 'En adultos', component:AdultosPage,icon:'contact'}
 
     ];
 

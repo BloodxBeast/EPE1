@@ -11,11 +11,11 @@ import {InformacionPage }from'../pages/informacion/informacion';
 import { SintomasPage } from '../pages/sintomas/sintomas';
 import { EscuelasPage } from '../pages/escuelas/escuelas';
 import {QuienesSomosPage } from '../pages/quienes-somos/quienes-somos';
-
+import {AdultosPage} from'../pages/adultos/adultos';
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,ContactoPage,InformacionPage,SintomasPage,EscuelasPage,QuienesSomosPage  
+    HomePage,ContactoPage,InformacionPage,SintomasPage,EscuelasPage,QuienesSomosPage,AdultosPage
   ],
   imports: [
     BrowserModule,
@@ -24,7 +24,7 @@ import {QuienesSomosPage } from '../pages/quienes-somos/quienes-somos';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,ContactoPage,InformacionPage,SintomasPage,EscuelasPage, QuienesSomosPage    
+    HomePage,ContactoPage,InformacionPage,SintomasPage,EscuelasPage, QuienesSomosPage,AdultosPage   
   ],
   providers: [
     StatusBar,

@@ -13,7 +13,7 @@
       <img src="assets/imgs/sugerencia.jpg">
     </div>
   </ion-card>
-  <ion-card style="background-color: #FBDEA1">
+  <ion-card ngFor="let sugerencia of sugerencia" style="background-color: #FBDEA1" >
     <ion-card-content>
       <ion-card-title>
         Sugerencias
@@ -22,21 +22,21 @@
       <ion-list>
         <ion-item  >
           <ion-label floating style="color :black" >Nombre</ion-label>
-          <ion-input  type="text">
+          <ion-input  type="text" [(ngModel)]="nombre"  >
 
           </ion-input>
         </ion-item>
         <ion-item >
           <ion-label floating style="color :black">Titulo</ion-label>
-          <ion-input type="text"></ion-input>
+          <ion-input type="text" [(ngModel)]="titulo"></ion-input>
         </ion-item>
 
         <ion-item>
           <ion-label floating style="color :black">Sugerencia</ion-label>
-          <ion-textarea ></ion-textarea>
+          <ion-textarea [(ngModel)]="comentario"></ion-textarea>
         </ion-item>
         <ion-item>
-          <button ion-button color="dark" outline>Enviar</button>
+          <button ion-button color="dark" outline (click)="enviarSugerencia()">Enviar</button>
         </ion-item>
       </ion-list>
 

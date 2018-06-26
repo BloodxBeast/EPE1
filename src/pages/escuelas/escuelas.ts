@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { IonicPage, NavController, NavParams, Platform } from 'ionic-angular';
+import {GoogleMap,GoogleMaps,GoogleMapsEvent,LatLng} from'@ionic-native/google-maps';
+import { PlatformLocation } from '@angular/common';
 /**
  * Generated class for the EscuelasPage page.
  *
@@ -12,11 +13,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 @Component({
   selector: 'page-escuelas',
   templateUrl: 'escuelas.html',
+  providers:[GoogleMaps]
 })
 export class EscuelasPage {
   
   toggleValue: boolean = false;
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  public map: GoogleMap;
+  constructor(public navCtrl: NavController, public navParams: NavParams,public googleMaps:GoogleMaps,private plataform:Platform) {
   }
 
   change(){
@@ -25,6 +28,14 @@ export class EscuelasPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad EscuelasPage');
+    this.plataform.ready().then(()=>{
+      this.map=this.googleMaps.create('map');
+      this.map.one(GoogleMapsEvent.MAP_READY).then((data:any)=>{
+        let myPosition:LatLng=new LatLng(41.390295,2.154007);
+        this.map.animateCamera({target:myPosition,zoom: 10})
+      })
+    }
+  )
   }
 
 }

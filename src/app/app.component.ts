@@ -21,6 +21,7 @@ var config = {
   projectId: "appasperger",
   storageBucket: "appasperger.appspot.com",
   messagingSenderId: "478828909687"
+
 };
 
 
